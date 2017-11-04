@@ -1,0 +1,79 @@
+/* tryton-vanmeer.github.io/WhyIUseLinux
+
+________  ________   ________
+|\   ____\|\   ____\ |\   ____\
+\ \  \___|\ \  \___|_\ \  \___|_
+\ \  \    \ \_____  \\ \_____  \
+ \ \  \____\|____|\  \\|____|\  \
+  \ \_______\____\_\  \ ____\_\  \
+   \|_______|\_________\\_________\
+            \|_________\|_________|
+*/
+
+:root {
+    --background-color: #1D1F21;
+    --color: #FFFFFF;
+
+    --color-red: #CC6666;
+    --color-light-red: #CC7A7A;
+
+    --background-color-nav: #373B41;
+}
+
+
+/*Body */
+
+body {
+    background-color: var(--background-color);
+    color: var(--color);
+}
+
+
+/* Navbar */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: var(--background-color-nav);
+}
+
+#nav-title {
+    font-weight: bold;
+}
+
+#nav-close-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--color-red);
+}
+
+#nav-close-button:hover {
+    background: var(--color-light-red);
+}
+
+
+/* Main */
+
+main {
+    margin: 0 auto;
+    width: 95%;
+    font-size: 1.5em;
+}
+
+main > span {
+    display: block;
+}
+
+main > pre {
+    white-space: pre-line;
+}
+
+main > span.prompt::before {
+    content: "┌ ~ \a └>$ ";
+    white-space: pre;
+}
