@@ -74,6 +74,6 @@ main > pre {
 }
 
 main > span.prompt::before {
-    content: "┌ ~ \a └>$ ";
+    content: "┌ ~/Code/WhyIUseLinux \a └>$ ";
     white-space: pre;
 }
