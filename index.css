@@ -70,10 +70,18 @@ main > span {
 }
 
 main > pre {
+    margin: 0;
     white-space: pre-line;
 }
 
-main > span.prompt::before {
-    content: "┌ ~/Code/WhyIUseLinux \a └>$ ";
-    white-space: pre;
+#prompt #cwd {
+    color: #2196F3;
+}
+
+ul {
+    list-style-type: "+ "
+}
+
+.span-linux {
+    color: #1C93CE;
 }
